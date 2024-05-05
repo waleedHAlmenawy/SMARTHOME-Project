@@ -70,12 +70,13 @@ footer p{
 }
 
 footer{
-  background: url(../images/image.png) no-repeat fixed center ;
+  background: url(../images/image.png)  no-repeat fixed center ;
+  background-size: cover;
   color:white;
 }
 
 footer>div:nth-child(1){
-  height: 378px;
+  min-height: 378px;
   background-color:#000a18da;
   padding-top: 80px;
 }
