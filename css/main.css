@@ -36,3 +36,59 @@ nav a {
 .logo {
   font-size: 48px;
 }
+
+
+/* ---------------- footer ----------------- */
+footer h2{
+  font-size: 48px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+footer h4{
+  font-size: 24px;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+
+
+}
+footer ul{
+  list-style: none;
+  list-style-position:outside;
+  padding: 0;
+}
+footer li{
+  margin: 0;
+  text-transform: capitalize;
+  font-size: 18px;
+  line-height: 35px; 
+}
+footer p{
+  font-size: 18px; 
+  text-transform: capitalize;
+  line-height: 35px; 
+
+}
+
+footer{
+  background: url(../images/image.png) no-repeat fixed center ;
+  color:white;
+}
+
+footer>div:nth-child(1){
+  height: 378px;
+  background-color:#000a18da;
+  padding-top: 80px;
+}
+
+
+footer>div:nth-child(2){
+  height: 98px;
+  background-color: rgba(0, 0, 0, 0.91);
+}
+
+footer>div:nth-child(2) p{
+  line-height: 98px;
+  font-size: 18px;
+  font-weight: 400;
+  
+}
