@@ -2,27 +2,28 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.navBar {
+/* ---------------- navbar ----------------- */
+
+.nav-background {
+  position: absolute;
+  top: 0;
   background-color: black;
+  opacity: 0.2;
+  filter: blur(4px);
+  height: 150px;
+  width: 100%;
+  z-index: 0;
 }
 
-nav .links {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  color: white;
-}
-
-nav .links .icons {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
+nav {
+  position: absolute;
+  top: 0;
+  height: 150px;
+  width: 100%;
 }
 
 nav .line {
-  width: 85%;
+  width: 80%;
   height: 1px;
   margin-bottom: 20px;
   background-color: white;
@@ -30,14 +31,131 @@ nav .line {
 
 nav a {
   text-decoration: none;
+  text-transform: capitalize;
   color: white;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .logo {
+  color: white;
+  text-transform: uppercase;
   font-size: 48px;
 }
 
+.profile .avatar {
+  object-fit: cover;
+  width: 52px;
+  height: 52px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 10px;
+}
 
+/* ---------------- user profile ----------------- */
+
+.profile .text-container span:first-child {
+  color: #808080;
+  font-size: 14px;
+}
+
+.profile .text-container span:last-child {
+  color: #ffff;
+  font-size: 16px;
+}
+
+/* ---------------- end of navbar ----------------- */
+
+/* ---------------- hero ----------------- */
+
+.hero {
+  background: url(../images/banner-home.png) no-repeat fixed center;
+  background-size: cover;
+
+  min-height: 100vh;
+  padding-top: 160px;
+}
+
+.card {
+  background-color: transparent;
+  border: none;
+}
+
+.card-background {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: black;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.card .content {
+  z-index: 1;
+}
+
+.card .content .card-title {
+  color: #c3beff;
+  font-weight: 700;
+  font-size: 44px;
+
+  text-transform: capitalize;
+}
+
+.card .content .card-paragraph {
+  font-weight: 400;
+  color: #fff;
+  font-size: 18px;
+  line-height: 38.5px;
+}
+
+.card .content .btns {
+  width: 30%;
+}
+
+.card .content .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+
+  background-color: #c4c4c4;
+}
+
+.card .content .active-dot {
+  background-color: #c3beff;
+}
+
+.big-circle {
+  width: 600px;
+  height: 600px;
+
+  background-color: #2d265b;
+}
+
+.mid-circle {
+  width: 85%;
+  height: 85%;
+  background-color: #332a69;
+}
+
+.small-circle {
+  width: 85%;
+  height: 85%;
+  background: radial-gradient(
+    133.85% 133.85% at 50.09% 50.09%,
+    #292253 0%,
+    #48428b 100%
+  );
+}
+
+.small-circle > img {
+  width: 85%;
+  height: 85%;
+}
+
+/* ---------------- end of hero ----------------- */
 
 /* ---------------- categories ----------------- */
 section{
@@ -45,16 +163,17 @@ section{
   margin-block: 100px;
 }
 section h3{
+
   font-size: 32px;
   font-weight: 600;
-
 }
 section h5{
+
   font-size: 20px;
   font-weight: 600;
-
 }
 section p{
+
   font-size: 16px;
   color: #797979;
 }
@@ -70,20 +189,18 @@ section .section-name {
   -o-border-radius: 40px;
   text-align: center;
   margin-bottom: 12px;
-  
 }
-.categories-cards{
+.categories-cards {
   margin-top: 48px;
 }
 section .section-name p{
   color: #6759FF;
   font-weight:600;
+
   line-height: 35px;
-  
 }
 .category-card {
   display: inline-flex;
-
 }
 /* ---------------- services ----------------- */
 
@@ -155,57 +272,53 @@ section .service-name p{
 }
 
 /* ---------------- footer ----------------- */
-footer h2{
+
+footer h2 {
   font-size: 48px;
   text-transform: uppercase;
   margin-bottom: 25px;
 }
-footer h4{
+footer h4 {
   font-size: 24px;
   text-transform: capitalize;
   margin-bottom: 25px;
-
-
 }
-footer ul{
+footer ul {
   list-style: none;
-  list-style-position:outside;
+  list-style-position: outside;
   padding: 0;
 }
-footer li{
+footer li {
   margin: 0;
   text-transform: capitalize;
   font-size: 18px;
-  line-height: 35px; 
+  line-height: 35px;
 }
-footer p{
-  font-size: 18px; 
+footer p {
+  font-size: 18px;
   text-transform: capitalize;
-  line-height: 35px; 
-
+  line-height: 35px;
 }
 
-footer{
-  background: url(../images/image.png)  no-repeat fixed center ;
+footer {
+  background: url(../images/image.png) no-repeat fixed center;
   background-size: cover;
-  color:white;
+  color: white;
 }
 
-footer>div:nth-child(1){
+footer > div:nth-child(1) {
   min-height: 378px;
-  background-color:#000a18da;
+  background-color: #000a18da;
   padding-top: 80px;
 }
 
-
-footer>div:nth-child(2){
+footer > div:nth-child(2) {
   height: 98px;
   background-color: rgba(0, 0, 0, 0.91);
 }
 
-footer>div:nth-child(2) p{
+footer > div:nth-child(2) p {
   line-height: 98px;
   font-size: 18px;
   font-weight: 400;
-  
 }
