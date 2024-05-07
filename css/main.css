@@ -12,7 +12,7 @@ body {
   filter: blur(4px);
   height: 150px;
   width: 100%;
-  z-index: 0;
+  z-index: 1;
 }
 
 nav {
@@ -20,6 +20,8 @@ nav {
   top: 0;
   height: 150px;
   width: 100%;
+
+  z-index: 2;
 }
 
 nav .line {
@@ -33,14 +35,14 @@ nav a {
   text-decoration: none;
   text-transform: capitalize;
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
 }
 
 .logo {
   color: white;
   text-transform: uppercase;
-  font-size: 48px;
+  font-size: 40px;
 }
 
 .profile .avatar {
@@ -90,6 +92,12 @@ nav a {
   background-color: black;
   opacity: 0.2;
   z-index: 0;
+
+  border: 2px solid;
+
+  border: 3px solid transparent;
+  border-image: linear-gradient(40deg, black, rgba(131, 62, 243, 1));
+  border-image-slice: 1;
 }
 
 .card .content {
@@ -155,7 +163,61 @@ nav a {
   height: 85%;
 }
 
+.hero-btn button div {
+  width: 100px;
+  height: 100px;
+
+  background-color: white;
+
+  border-radius: 50%;
+}
+
+.hero-btn button:last-of-type div {
+  background: rgba(103, 89, 255, 1);
+}
+
+.hero-btn + p {
+  text-transform: capitalize;
+}
 /* ---------------- end of hero ----------------- */
+
+/* ---------------- banner ----------------- */
+
+.banner {
+  background: url(../images/banner-image.png) no-repeat fixed center;
+  background-size: cover;
+
+  min-height: 75vh;
+  padding-top: 160px;
+}
+
+.banner-overlay {
+  background: url(../images/banner-overlay.png) no-repeat fixed center;
+  background-size: cover;
+
+  width: 100%;
+  height: 100%;
+  padding-top: 200px;
+
+  text-indent: 100px;
+
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+.banner .headline {
+  width: 100%;
+  height: 100%;
+
+  font-size: 64px;
+  font-weight: 800;
+  color: white;
+
+  text-indent: 0;
+}
+
+/* ---------------- end of banner ----------------- */
 
 /* ---------------- categories ----------------- */
 #categories {
