@@ -6,23 +6,32 @@ body {
   background-color: black;
 }
 
-nav .links {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* ---------------- navbar ----------------- */
 
-  color: white;
+body {
+  height: 100vh;
 }
 
-nav .links .icons {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
+.nav-background {
+  position: absolute;
+  top: 0;
+  background-color: black;
+  opacity: 0.2;
+  filter: blur(4px);
+  height: 150px;
+  width: 100%;
+  z-index: 0;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  height: 150px;
+  width: 100%;
 }
 
 nav .line {
-  width: 85%;
+  width: 80%;
   height: 1px;
   margin-bottom: 20px;
   background-color: white;
@@ -30,66 +39,132 @@ nav .line {
 
 nav a {
   text-decoration: none;
+  text-transform: capitalize;
   color: white;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .logo {
+  color: white;
+  text-transform: uppercase;
   font-size: 48px;
 }
 
+.profile .avatar {
+  object-fit: cover;
+  width: 52px;
+  height: 52px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* ---------------- user profile ----------------- */
+
+.profile .text-container span:first-child {
+  color: #808080;
+  font-size: 14px;
+}
+
+.profile .text-container span:last-child {
+  color: #ffff;
+  font-size: 16px;
+}
+
+/* ---------------- end of navbar ----------------- */
+
+/* ---------------- hero ----------------- */
+
+.card-background {
+  position: absolute;
+
+  top: 50%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+
+  background-color: black;
+  opacity: 0.2;
+  height: 514px;
+  z-index: 0;
+}
+
+.card {
+  position: absolute;
+
+  top: 50%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+
+  height: 514px;
+
+  background-color: transparent;
+  border: none;
+}
+
+.card .card-title {
+  color: #c3beff;
+  font-weight: 700;
+  font-size: 48px;
+  text-transform: capitalize;
+}
+
+.card .card-paragraph {
+  font-weight: 400;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* ---------------- end of hero ----------------- */
 
 /* ---------------- footer ----------------- */
-footer h2{
+
+footer h2 {
   font-size: 48px;
   text-transform: uppercase;
   margin-bottom: 25px;
 }
-footer h4{
+footer h4 {
   font-size: 24px;
   text-transform: capitalize;
   margin-bottom: 25px;
-
-
 }
-footer ul{
+footer ul {
   list-style: none;
-  list-style-position:outside;
+  list-style-position: outside;
   padding: 0;
 }
-footer li{
+footer li {
   margin: 0;
   text-transform: capitalize;
   font-size: 18px;
-  line-height: 35px; 
+  line-height: 35px;
 }
-footer p{
-  font-size: 18px; 
+footer p {
+  font-size: 18px;
   text-transform: capitalize;
-  line-height: 35px; 
-
+  line-height: 35px;
 }
 
-footer{
-  background: url(../images/image.png)  no-repeat fixed center ;
+footer {
+  background: url(../images/image.png) no-repeat fixed center;
   background-size: cover;
-  color:white;
+  color: white;
 }
 
-footer>div:nth-child(1){
+footer > div:nth-child(1) {
   min-height: 378px;
-  background-color:#000a18da;
+  background-color: #000a18da;
   padding-top: 80px;
 }
 
-
-footer>div:nth-child(2){
+footer > div:nth-child(2) {
   height: 98px;
   background-color: rgba(0, 0, 0, 0.91);
 }
 
-footer>div:nth-child(2) p{
+footer > div:nth-child(2) p {
   line-height: 98px;
   font-size: 18px;
   font-weight: 400;
-  
 }
