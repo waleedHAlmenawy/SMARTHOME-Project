@@ -1,5 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #F6F6F6;
 }
 
 /* ---------------- navbar ----------------- */
@@ -161,6 +162,8 @@ nav a {
 section{
   padding-inline: 8rem;
   margin-block: 100px;
+  text-transform: capitalize;
+
 }
 section h3{
 
@@ -180,7 +183,7 @@ section p{
 
 section .section-name {
   background-color: #EAEDFF;
-  width: 107px;
+  max-width: 107px;
   height: 35px;
   border-radius: 40px;
   -webkit-border-radius: 40px;
@@ -189,6 +192,7 @@ section .section-name {
   -o-border-radius: 40px;
   text-align: center;
   margin-bottom: 12px;
+  
 }
 .categories-cards {
   margin-top: 48px;
@@ -202,6 +206,7 @@ section .section-name p{
 .category-card {
   display: inline-flex;
 }
+
 /* ---------------- services ----------------- */
 
 .service-card{
@@ -229,7 +234,7 @@ section .section-name p{
 }
 
 .service-name{
-  background-color: #ffffff;
+  background-color: #F6F6F6;
   border: #6759FF 1px solid;
   height: 35px;
   padding-inline: 10px;
@@ -269,6 +274,113 @@ section .service-name p{
   font-weight: 500;
   font-size: 12px;
 
+}
+
+/* ---------------- testmonials ----------------- */
+
+#testmonials h2{
+  color: #6759FF;
+}
+
+#testmonials .heading{
+  border-bottom: 1px solid black;
+  margin-inline: auto;
+  text-align: center;
+  padding-bottom: 24px;
+  max-width: 1237px;
+}
+
+.testmonials-content{
+  background-color: white;
+  max-width: 787px;
+  min-height: 599px;
+  margin-inline: auto;
+  margin-top: 100px;
+  text-align: center;
+  padding-top: 97px;
+  position: relative;
+  box-shadow: 0 0 30px #aaaaaa3c;
+
+}
+.testmonials-content h3{
+  font-size: 24px;
+  margin-block: 13px 8px;
+}
+.testmonials-content p{
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+  line-height: 39px;
+  max-width:530px ;
+  margin-inline: auto;
+  text-align: left;
+  margin-top: 48px;
+  text-transform: capitalize;
+}
+
+.testmonials-content svg{
+  margin-inline: 3px;
+}
+
+.testmonials-content .testmonials-img {
+  height: 110px;
+  width: 110px;
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-inline: auto;
+  
+}
+.testmonials-content .testmonials-img  img{
+  position: relative;
+  bottom: 20px;
+  
+  width: 110px;
+}
+.testmonials-content .dots{
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  translate: -50%;
+
+}
+
+.testmonials-content .qoutes{
+  position: absolute;
+  top:97px;
+  left:145px;
+}
+
+.testmonials-content .right, .testmonials-content .left{
+  background-color: white;
+  width: 102px;
+  height: 102px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+    box-shadow: 0 0 30px #aaaaaa3c;
+
+}
+.testmonials-content .right{
+  top :50%;
+  right: -105px;
+  translate: -50% ;
+}
+.testmonials-content .left{
+  top :50%;
+  left: -5px;
+  translate: -50% ;
 }
 
 /* ---------------- footer ----------------- */
