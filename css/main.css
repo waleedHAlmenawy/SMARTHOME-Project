@@ -40,26 +40,26 @@ nav a {
 
 
 /* ---------------- categories ----------------- */
-#categories{
+section{
   padding-inline: 8rem;
   margin-block: 100px;
 }
-#categories h3{
+section h3{
   font-size: 32px;
   font-weight: 600;
 
 }
-#categories h5{
+section h5{
   font-size: 20px;
   font-weight: 600;
 
 }
-#categories p{
+section p{
   font-size: 16px;
   color: #797979;
 }
 
-#categories .section-name {
+section .section-name {
   background-color: #EAEDFF;
   width: 107px;
   height: 35px;
@@ -75,7 +75,7 @@ nav a {
 .categories-cards{
   margin-top: 48px;
 }
-#categories .section-name p{
+section .section-name p{
   color: #6759FF;
   font-weight:600;
   line-height: 35px;
@@ -85,8 +85,74 @@ nav a {
   display: inline-flex;
 
 }
+/* ---------------- services ----------------- */
 
+.service-card{
+  border: #6759FF 1px solid;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
 
+.service-card img{
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.service-card a{
+  text-decoration: none;
+  color: #6759FF;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.service-name{
+  background-color: #ffffff;
+  border: #6759FF 1px solid;
+  height: 35px;
+  padding-inline: 10px;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  text-align: center;
+  margin-bottom: 12px;
+
+}
+section .service-name p{
+  color: #6759FF;
+  font-weight:600;
+  line-height: 35px;
+  
+}
+.service-card span{
+  font-size: 14px;
+
+}
+.text-darkgrey{
+  color: #6F767E;
+}
+
+.service-card h6 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.red-text{
+  color: #EB5757;
+  font-size: 12px;
+}
+.blue-text{
+  color: #2682F0;
+  font-weight: 500;
+  font-size: 12px;
+
+}
 
 /* ---------------- footer ----------------- */
 footer h2{
