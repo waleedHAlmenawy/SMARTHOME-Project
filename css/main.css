@@ -169,6 +169,7 @@ section h3{
 
   font-size: 32px;
   font-weight: 600;
+  
 }
 section h5{
 
@@ -382,6 +383,39 @@ section .service-name p{
   left: -5px;
   translate: -50% ;
 }
+/* ---------------- booking ----------------- */
+#booking .time{
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: -0.01em;
+color: #1A1D1F;
+margin-top: 6px;
+margin-bottom: 8px;
+
+}
+
+#booking .img-conainer{
+  border: #C4C4C44D 0.7px solid;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: 20px;
+}
+
+#booking .height-60{
+  height: 60px;
+
+}
+
+
 
 /* ---------------- footer ----------------- */
 
