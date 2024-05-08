@@ -1,3 +1,4 @@
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #F6F6F6;
@@ -221,10 +222,11 @@ nav a {
 /* ---------------- end of banner ----------------- */
 
 /* ---------------- categories ----------------- */
-section{
-  padding-inline: 8rem;
+section{  
   margin-block: 100px;
   text-transform: capitalize;
+  max-width: 100vw;
+  margin-inline: auto;
 
 }
 section h3{
@@ -257,6 +259,7 @@ section .section-name {
   margin-bottom: 12px;
   
 }
+
 .categories-cards {
   margin-top: 48px;
 }
@@ -268,7 +271,9 @@ section .section-name p{
 }
 .category-card {
   display: inline-flex;
+  margin-bottom: 10px;
 }
+
 
 /* ---------------- services ----------------- */
 
@@ -410,17 +415,10 @@ section .service-name p{
   translate: -50%;
 
 }
-
-.testmonials-content .qoutes{
-  position: absolute;
-  top:97px;
-  left:145px;
-}
-
 .testmonials-content .right, .testmonials-content .left{
   background-color: white;
-  width: 102px;
-  height: 102px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -437,14 +435,17 @@ section .service-name p{
 }
 .testmonials-content .right{
   top :50%;
-  right: -105px;
+  right: -40px;
   translate: -50% ;
 }
 .testmonials-content .left{
   top :50%;
-  left: -5px;
+  left: 10px;
   translate: -50% ;
 }
+
+
+
 /* ---------------- booking ----------------- */
 #booking .time{
 font-weight: 600;
@@ -529,4 +530,126 @@ footer > div:nth-child(2) p {
   line-height: 98px;
   font-size: 18px;
   font-weight: 400;
+}
+@media (max-width: 480px) {
+  section {
+    padding-inline: 30px;
+  }
+
+
+}
+@media (min-width: 481px) and (max-width:768px) {
+  section {
+    padding-inline: 50px;
+    
+  }
+
+}
+@media (min-width: 769px)and (max-width:1200px) {
+  section {
+    padding-inline: 5rem;
+
+  }
+
+}
+
+@media (min-width: 1200px){
+  section {
+    padding-inline: 8rem;
+  }
+
+}
+
+
+@media (max-width: 1199px) {
+  .service-inner{
+    display: flex;
+  }
+}
+@media (min-width: 1200px)and (max-width:1303px) {
+  .service-inner{
+    display: block;
+  }
+}
+@media  (min-width:1303px) {
+  .service-inner{
+    display: flex;
+  }
+  
+}
+
+
+@media (max-width: 991px) {
+  .footer-list{
+    display: flex;
+  }
+}
+@media (min-width: 992px)and (max-width:1292px) {
+  .footer-list{
+    display: block;
+  }
+}
+
+@media  (min-width:1303px) {
+  .footer-list{
+    display: flex;
+  }
+  
+}
+
+@media (max-width:992px) {
+  .testmonials-content .qoutes{
+    position: absolute;
+    top:30px;
+    left:30px;
+  }
+  .testmonials-content .qoutes svg{
+    width:27px;
+     height:52.5px;
+  }
+  .testmonials-content .right, .testmonials-content .left{
+
+    width: 50px;
+    height: 50px;
+
+  
+  }
+  .testmonials-content .right{
+
+    right: -40px;
+  }
+  .testmonials-content .left{
+    left: 10px;
+  }
+  .testmonials-content p{
+    font-size: 14px;
+    line-height: 30px;
+    max-width:75% ;
+    margin-top: 20px;
+  }
+
+}
+@media (min-width:993px) {
+  .testmonials-content .qoutes{
+    position: absolute;
+    top:97px;
+    left:145px;
+  }
+  .testmonials-content .qoutes svg{
+    width:54px;
+     height:105px;
+  }
+  .testmonials-content .right, .testmonials-content .left{
+    width: 102px;
+    height: 102px;
+
+  
+  }
+  .testmonials-content .right{
+    right: -105px;
+  }
+  .testmonials-content .left{
+    left: -5px;
+  }
+
 }
