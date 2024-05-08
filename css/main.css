@@ -653,3 +653,19 @@ footer > div:nth-child(2) p {
   }
 
 }
+
+@media (min-width: 1201px)and (max-width:1640px) {
+  #booking .img-conainer{
+    height: 40px;
+    width: 40px;
+
+  }
+  .booking-inner{
+    padding-block: 40px !important;
+    padding-inline: 5px !important;
+  }
+  #booking h6{
+    font-size: 16px !important;
+  }
+
+}
