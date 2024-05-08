@@ -10,10 +10,10 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono&display=swap"
     rel="stylesheet" />
-  <link href="css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="css/main.css" />
+  <link href="../css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/main.css" />
 
-  <script defer src="js/bootstrap.min.js"
+  <script defer src="../js/bootstrap.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/d245c084da.js" crossorigin="anonymous"></script>
@@ -88,7 +88,7 @@
     </div>
 
     <div class="col-12 col-md-2 align-self-center justify-content-center d-none profile d-xl-flex">
-      <img src="./images/user-image.png" alt="user-image" class="avatar">
+      <img src="../images/user-image.png" alt="user-image" class="avatar">
 
       <div class="text-container d-flex flex-column justify-content-center">
         <span>Welcome,</span>
@@ -148,7 +148,7 @@
     <div class="big-circle rounded-circle d-flex justify-content-end align-items-center col-4 d-none d-xl-flex">
       <div class="mid-circle rounded-circle d-flex justify-content-end align-items-center">
         <div class="small-circle rounded-circle d-flex justify-content-end align-items-center">
-          <img src="./images/hero-image.png" alt="">
+          <img src="../images/hero-image.png" alt="">
         </div>
       </div>
     </div>
@@ -216,11 +216,13 @@
     </div>
   </div>
 
+
+  <!------------categories--------------->
   <section id="categories">
     <div class="section-name">
       <p>Categories</p>
     </div>
-    <h3>Learn about our Categories</h3>
+    <h3 class="mb-3">Learn about our Categories</h3>
     <div class="categories-cards row justify-content-between">
       <div class="category-card col-12 col-md-6 col-lg-3 px-3">
         <div class="me-3 pt-1">
@@ -303,67 +305,26 @@
     </div>
   </section>
 
+
+  <!------------services--------------->
   <section id="services">
     <div class="section-name">
       <p>Services</p>
     </div>
-    <h3>Explore our services</h3>
+    <h3 class="mb-3">Explore our services</h3>
     <div class="services-cards row justify-content-between">
       <div class="col-12 col-md-6 col-xl-3 p-3">
         <div class="service-card col-12 col-md-6 col-lg-3 p-0 w-100">
           <div class="me-3  w-100">
-            <img src="./images/electric.png" alt="" width="100%">
+            <img src="../images/electric.png" alt="" width="100%">
           </div>
 
           <div class="p-4">
-            <div class="d-flex justify-content-between">
+            <div class=" service-inner justify-content-between">
               <div class="service-name">
                 <p>Electronics</p>
               </div>
-              <div>
-                <span>
-                  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M11.1082 4.00751C11.5751 2.66416 13.4749 2.66417 13.9419 4.0075L14.8874 6.72766C15.2307 7.71534 16.1525 8.38502 17.1979 8.40632L20.0771 8.46499C21.499 8.49397 22.0861 10.3008 20.9528 11.16L18.6579 12.8998C17.8247 13.5315 17.4726 14.6151 17.7754 15.6159L18.6093 18.3724C19.0211 19.7336 17.4842 20.8503 16.3168 20.038L13.953 18.3931C13.0947 17.7958 11.9554 17.7958 11.0971 18.3931L8.73328 20.038C7.56592 20.8503 6.02895 19.7336 6.44078 18.3724L7.2747 15.6159C7.57749 14.6151 7.22542 13.5315 6.39218 12.8998L4.09734 11.16C2.96404 10.3008 3.55111 8.49397 4.97299 8.46499L7.8522 8.40632C8.89763 8.38502 9.81936 7.71534 10.1627 6.72766L11.1082 4.00751Z"
-                      stroke="#FAC153" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </span>
-                <span class="fw-bold">4.5</span>
-                <span class="text-darkgrey fw-bold">
-                  (87)
-                </span>
-              </div>
-
-            </div>
-            <h6>Lorem Ipsum is simply dummy text</h5>
-              <p class="mb-2 mt-3">
-                by <span class="text-black fw-bold">marwan</span>
-              </p>
-              <h6 class="mb-4 mt-0 fw-light"><span class="red-text me-2">$ <span class="fw-bold fs-5 ">12</span>/h
-                </span><span class="blue-text">Off 20%</span></h6>
-              <a href="">Read More &gt;</a>
-          </div>
-        </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="col-12 col-md-6 col-xl-3 p-3">
-        <div class="service-card col-12 col-md-6 col-lg-3 p-0 w-100">
-          <div class="me-3  w-100">
-            <img src="./images/electric.png" alt="" width="100%">
-          </div>
-
-          <div class="p-4">
-            <div class="d-flex justify-content-between">
-              <div class="service-name">
-                <p>Electronics</p>
-              </div>
-              <div>
+              <div class="mb-2">
                 <span>
                   <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -391,15 +352,15 @@
       <div class="col-12 col-md-6 col-xl-3 p-3">
         <div class="service-card col-12 col-md-6 col-lg-3 p-0 w-100">
           <div class="me-3  w-100">
-            <img src="./images/electric.png" alt="" width="100%">
+            <img src="../images/electric.png" alt="" width="100%">
           </div>
 
           <div class="p-4">
-            <div class="d-flex justify-content-between">
+            <div class="service-inner justify-content-between">
               <div class="service-name">
                 <p>Electronics</p>
               </div>
-              <div>
+              <div class="mb-2">
                 <span>
                   <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -427,15 +388,51 @@
       <div class="col-12 col-md-6 col-xl-3 p-3">
         <div class="service-card col-12 col-md-6 col-lg-3 p-0 w-100">
           <div class="me-3  w-100">
-            <img src="./images/electric.png" alt="" width="100%">
+            <img src="../images/electric.png" alt="" width="100%">
           </div>
 
           <div class="p-4">
-            <div class="d-flex justify-content-between">
+            <div class="service-inner justify-content-between">
               <div class="service-name">
                 <p>Electronics</p>
               </div>
-              <div>
+              <div class="mb-2">
+                <span>
+                  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.1082 4.00751C11.5751 2.66416 13.4749 2.66417 13.9419 4.0075L14.8874 6.72766C15.2307 7.71534 16.1525 8.38502 17.1979 8.40632L20.0771 8.46499C21.499 8.49397 22.0861 10.3008 20.9528 11.16L18.6579 12.8998C17.8247 13.5315 17.4726 14.6151 17.7754 15.6159L18.6093 18.3724C19.0211 19.7336 17.4842 20.8503 16.3168 20.038L13.953 18.3931C13.0947 17.7958 11.9554 17.7958 11.0971 18.3931L8.73328 20.038C7.56592 20.8503 6.02895 19.7336 6.44078 18.3724L7.2747 15.6159C7.57749 14.6151 7.22542 13.5315 6.39218 12.8998L4.09734 11.16C2.96404 10.3008 3.55111 8.49397 4.97299 8.46499L7.8522 8.40632C8.89763 8.38502 9.81936 7.71534 10.1627 6.72766L11.1082 4.00751Z"
+                      stroke="#FAC153" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <span class="fw-bold">4.5</span>
+                <span class="text-darkgrey fw-bold">
+                  (87)
+                </span>
+              </div>
+
+            </div>
+            <h6>Lorem Ipsum is simply dummy text</h5>
+              <p class="mb-2 mt-3">
+                by <span class="text-black fw-bold">marwan</span>
+              </p>
+              <h6 class="mb-4 mt-0 fw-light"><span class="red-text me-2">$ <span class="fw-bold fs-5 ">12</span>/h
+                </span><span class="blue-text">Off 20%</span></h6>
+              <a href="">Read More &gt;</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-xl-3 p-3">
+        <div class="service-card col-12 col-md-6 col-lg-3 p-0 w-100">
+          <div class="me-3  w-100">
+            <img src="../images/electric.png" alt="" width="100%">
+          </div>
+
+          <div class="p-4">
+            <div class="service-inner justify-content-between">
+              <div class="service-name">
+                <p>Electronics</p>
+              </div>
+              <div class="mb-2">
                 <span>
                   <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -466,6 +463,8 @@
     </div>
   </section>
 
+
+  <!------------testmonials--------------->
   <section id="testmonials">
     <div>
       <div class="heading">
@@ -473,7 +472,7 @@
       </div>
       <div class="testmonials-content ">
         <div class="testmonials-img ">
-          <img src="./images/lolo.png" alt="">
+          <img src="../images/lolo.png" alt="">
         </div>
         <h3>
           LOLO
@@ -526,12 +525,12 @@
 
         </div>
         <div class="qoutes">
-          <svg class="me-3" width="54" height="105" viewBox="0 0 54 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="me-3" viewBox="0 0 54 105" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M0 105C3.18714 62.892 -2.00808 39.1316 34.9138 0L54 16.5C28.8228 49.7646 29.2646 69.575 31.1897 105H0Z"
               fill="#767676" />
           </svg>
-          <svg width="54" height="105" viewBox="0 0 54 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 54 105" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M0 105C3.18714 62.892 -2.00808 39.1316 34.9138 0L54 16.5C28.8228 49.7646 29.2646 69.575 31.1897 105H0Z"
               fill="#767676" />
@@ -561,6 +560,8 @@
 
   </section>
 
+
+  <!------------footer--------------->
   <footer class="w-100">
     <div class="w-100 row m-0 justify-content-around px-3 ">
       <div class="col-12  col-md-3 col-lg-3 px-4 px-md-0 ">
@@ -572,7 +573,7 @@
       </div>
       <div class="col-12 my-4 my-md-0  col-md-5 col-lg-3 px-4 px-md-0 ">
         <h4>explore</h4>
-        <div class="d-flex justify-content-between">
+        <div class="footer-list mb-4 justify-content-between">
           <ul class="">
             <li>Home</li>
             <li>Reels</li>

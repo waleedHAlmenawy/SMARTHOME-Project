@@ -205,7 +205,7 @@ nav a {
   z-index: -1;
 }
 
-.banner .page-headline {
+.banner .headline {
   width: 100%;
   min-height: 40vh;
 
@@ -429,9 +429,10 @@ input[type="file"] {
 
 /* ---------------- categories ----------------- */
 section {
-  padding-inline: 8rem;
   margin-block: 100px;
   text-transform: capitalize;
+  max-width: 100vw;
+  margin-inline: auto;
 }
 section h3 {
   font-size: 32px;
@@ -458,6 +459,7 @@ section .section-name {
   text-align: center;
   margin-bottom: 12px;
 }
+
 .categories-cards {
   margin-top: 48px;
 }
@@ -469,6 +471,7 @@ section .section-name p {
 }
 .category-card {
   display: inline-flex;
+  margin-bottom: 10px;
 }
 
 /* ---------------- services ----------------- */
@@ -604,18 +607,11 @@ section .service-name p {
   left: 50%;
   translate: -50%;
 }
-
-.testmonials-content .qoutes {
-  position: absolute;
-  top: 97px;
-  left: 145px;
-}
-
 .testmonials-content .right,
 .testmonials-content .left {
   background-color: white;
-  width: 102px;
-  height: 102px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -631,13 +627,43 @@ section .service-name p {
 }
 .testmonials-content .right {
   top: 50%;
-  right: -105px;
+  right: -40px;
   translate: -50%;
 }
 .testmonials-content .left {
   top: 50%;
-  left: -5px;
+  left: 10px;
   translate: -50%;
+}
+
+/* ---------------- booking ----------------- */
+#booking .time {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  color: #1a1d1f;
+  margin-top: 6px;
+  margin-bottom: 8px;
+}
+
+#booking .img-conainer {
+  border: #c4c4c44d 0.7px solid;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: 20px;
+}
+
+#booking .height-60 {
+  height: 60px;
 }
 
 /* ---------------- footer ----------------- */
@@ -690,4 +716,123 @@ footer > div:nth-child(2) p {
   line-height: 98px;
   font-size: 18px;
   font-weight: 400;
+}
+@media (max-width: 480px) {
+  section {
+    padding-inline: 30px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  section {
+    padding-inline: 50px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  section {
+    padding-inline: 5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  section {
+    padding-inline: 8rem;
+  }
+}
+
+@media (max-width: 1199px) {
+  .service-inner {
+    display: flex;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1303px) {
+  .service-inner {
+    display: block;
+  }
+}
+@media (min-width: 1303px) {
+  .service-inner {
+    display: flex;
+  }
+}
+
+@media (max-width: 991px) {
+  .footer-list {
+    display: flex;
+  }
+}
+@media (min-width: 992px) and (max-width: 1292px) {
+  .footer-list {
+    display: block;
+  }
+}
+
+@media (min-width: 1303px) {
+  .footer-list {
+    display: flex;
+  }
+}
+
+@media (max-width: 992px) {
+  .testmonials-content .qoutes {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+  .testmonials-content .qoutes svg {
+    width: 27px;
+    height: 52.5px;
+  }
+  .testmonials-content .right,
+  .testmonials-content .left {
+    width: 50px;
+    height: 50px;
+  }
+  .testmonials-content .right {
+    right: -40px;
+  }
+  .testmonials-content .left {
+    left: 10px;
+  }
+  .testmonials-content p {
+    font-size: 14px;
+    line-height: 30px;
+    max-width: 75%;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 993px) {
+  .testmonials-content .qoutes {
+    position: absolute;
+    top: 97px;
+    left: 145px;
+  }
+  .testmonials-content .qoutes svg {
+    width: 54px;
+    height: 105px;
+  }
+  .testmonials-content .right,
+  .testmonials-content .left {
+    width: 102px;
+    height: 102px;
+  }
+  .testmonials-content .right {
+    right: -105px;
+  }
+  .testmonials-content .left {
+    left: -5px;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1640px) {
+  #booking .img-conainer {
+    height: 40px;
+    width: 40px;
+  }
+  .booking-inner {
+    padding-block: 40px !important;
+    padding-inline: 5px !important;
+  }
+  #booking h6 {
+    font-size: 16px !important;
+  }
 }
