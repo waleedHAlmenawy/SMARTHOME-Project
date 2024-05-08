@@ -77,6 +77,7 @@
                                     </svg>
                                 </a>
                             </li>
+
                             <li class="mx-2 ">
                                 <a href="#" class="h4">
                                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -107,185 +108,151 @@
 
     <div class="banner">
         <div class="page-name d-flex align-items-center">
-            <div></div>
-            Booking
-        </div>
-
-        <div class="page-headline d-flex justify-content-center align-items-end">
-            Your schedule booking
+            <div class="bg-transparent"></div>
+            <span class="text-dark">Profile</span>
+            <div class="mx-4"></div>
+            Edit Profile
         </div>
     </div>
+
+    <section id="form">
+        <form>
+            <div class="row justify-content-center">
+                <div class="col-10 d-flex" id="nav">
+                    <a class="nav-link" href="../pages/profile.html#form">Profile</a>
+                    <div class="nav-link active">Edit Profile</div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-4">
+                <aside class="col-8 col-xl-2 user-profile d-flex flex-column align-items-center d-xl-block">
+                    <div class="user-image">
+                        <img src="../images/user-image.png" alt="">
+
+                        <div class="icon d-flex justify-content-center align-items-center">
+                            <label for="upload-image">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.1083 0C12.4569 0 11.7992 0.24366 11.3071 0.742127H11.3023L1.72154 10.4853L0 15.6563L5.16463 13.93L5.27451 13.8249L14.9094 4.34447C15.9 3.3539 15.9 1.73269 14.9094 0.742127C14.4173 0.248437 13.7596 0 13.1083 0ZM13.1083 1.26926C13.4315 1.26926 13.7548 1.3887 14.0096 1.64192C14.5113 2.14516 14.5113 2.94143 14.0096 3.44468L13.0031 4.43524C12.8646 4.09125 12.64 3.72337 12.2865 3.36983C11.9282 3.01151 11.5603 2.79173 11.2163 2.65318L12.2116 1.63714C12.4617 1.39348 12.785 1.26448 13.1083 1.26926ZM10.3754 3.72815C10.6095 3.74726 10.9535 3.83644 11.3819 4.26484C11.8135 4.69801 11.9043 5.042 11.9282 5.27611C11.9441 5.45447 11.9186 5.47995 11.9091 5.50862L5.32388 11.9839C5.18533 11.6702 4.96715 11.3373 4.6375 11.0093C4.31421 10.6844 3.98137 10.4662 3.66286 10.3261L10.1413 3.74726C10.1716 3.73293 10.1971 3.71223 10.3754 3.72815ZM2.78696 11.3819C2.98602 11.3963 3.30453 11.4759 3.74248 11.9138C4.17566 12.347 4.25528 12.6655 4.26962 12.8598C4.26962 12.8853 4.26484 12.8694 4.26962 12.8901L3.0561 13.293C2.95577 13.1688 2.85066 13.0445 2.72644 12.9203C2.607 12.8009 2.48278 12.6958 2.35856 12.6018L2.76625 11.3819C2.78218 11.3867 2.76625 11.3819 2.78696 11.3819Z"
+                                        fill="#6759FF" />
+                                </svg>
+
+                            </label>
+                            <input type="file" id="upload-image" title="upload-image">
+                        </div>
+                    </div>
+
+                    <div class="user-name">
+                        Mohamed Ali
+                    </div>
+                </aside>
+
+                <div class="col-12 col-xl-4 inputs">
+                    <div class="row justify-content-center justify-content-xl-start">
+                        <div class="col-10 d-flex flex-wrap flex-xl-nowrap p-0 gap-2">
+                            <input type="text" placeholder="First Name" class="w-100">
+                            <input type="text" placeholder="Last Name" class="w-100">
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center justify-content-xl-start">
+                        <input type="email" class="col-10" placeholder="Email">
+                    </div>
+
+                    <div class="row justify-content-center justify-content-xl-start">
+                        <div class="col-10 p-0">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center justify-content-xl-start">
+                        <input type="text" class="col-10" placeholder="Phone Number">
+                    </div>
+
+                    <div class="row justify-content-center justify-content-xl-start">
+                        <input type="text" class="col-10" placeholder="Address">
+                    </div>
+                </div>
+
+                <div class="col-12 col-xl-4 inputs">
+                    <div class="row text-center text-xl-start">
+                        <p>
+                            Change Password
+                        </p>
+                    </div>
+
+                    <div class="row justify-content-center justify-content-xl-start">
+                        <input type="password" class="col-10" placeholder="Current Password">
+                    </div>
+
+                    <div class="row justify-content-center justify-content-xl-start">
+                        <input type="password" class="col-10" placeholder="New Password">
+                    </div>
+
+                    <div class="row justify-content-center justify-content-xl-start">
+                        <input type="password" class="col-10" placeholder="Confirm Password">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="white-space col-6 col-xl-3"></div>
+
+                <div class="col-10 col-xl-5 ">
+                    <div class="row justify-content-between gap-2">
+                        <div class="col-5 col-xl-3 p-0">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>City</option>
+                                <option value="cairo">Cairo</option>
+                            </select>
+                        </div>
+                        <div class="col-5 col-xl-4 p-0">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Country</option>
+                                <option value="egypt">Egypt</option>
+                            </select>
+                        </div>
+                        <input type="text" class="col-12 col-xl-4" placeholder="Postal Code">
+                    </div>
+
+                    <div class="row justify-content-between gap-2">
+                        <div class="col-xl-5 col-12 p-0">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Date Of Birth</option>
+                            </select>
+                        </div>
+                        <div class="col-xl-3 col-5 p-0">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Day</option>
+                            </select>
+                        </div>
+                        <div class="col-xl-3 col-5 p-0">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Month</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="white-space col-6 col-xl-1"></div>
+
+                <button class="col-xl-2 col-10" id="form-btn" type="submit">
+                    Save
+                </button>
+
+                <div class="white-space col-6 col-xl-1"></div>
+            </div>
+        </form>
+    </section>
+
 
     <div class="banner-image">
     </div>
-
-    <section id="services">
-        <div class="section-name">
-            <p>Services</p>
-        </div>
-        <h3>Explore our services</h3>
-        <div class="services-cards row justify-content-between">
-            <div class="col-12 col-md-6 col-xl-3 p-3">
-                <div class="service-card col-12 col-md-6 col-lg-3 p-0 w-100">
-                    <div class="me-3  w-100">
-                        <img src="../images/electric.png" alt="" width="100%">
-                    </div>
-
-                    <div class="p-4">
-                        <div class="d-flex justify-content-between">
-                            <div class="service-name">
-                                <p>Electronics</p>
-                            </div>
-                            <div>
-                                <span>
-                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M11.1082 4.00751C11.5751 2.66416 13.4749 2.66417 13.9419 4.0075L14.8874 6.72766C15.2307 7.71534 16.1525 8.38502 17.1979 8.40632L20.0771 8.46499C21.499 8.49397 22.0861 10.3008 20.9528 11.16L18.6579 12.8998C17.8247 13.5315 17.4726 14.6151 17.7754 15.6159L18.6093 18.3724C19.0211 19.7336 17.4842 20.8503 16.3168 20.038L13.953 18.3931C13.0947 17.7958 11.9554 17.7958 11.0971 18.3931L8.73328 20.038C7.56592 20.8503 6.02895 19.7336 6.44078 18.3724L7.2747 15.6159C7.57749 14.6151 7.22542 13.5315 6.39218 12.8998L4.09734 11.16C2.96404 10.3008 3.55111 8.49397 4.97299 8.46499L7.8522 8.40632C8.89763 8.38502 9.81936 7.71534 10.1627 6.72766L11.1082 4.00751Z"
-                                            stroke="#FAC153" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </span>
-                                <span class="fw-bold">4.5</span>
-                                <span class="text-darkgrey fw-bold">
-                                    (87)
-                                </span>
-                            </div>
-
-                        </div>
-                        <h6>Lorem Ipsum is simply dummy text</h5>
-                            <p class="mb-2 mt-3">
-                                by <span class="text-black fw-bold">marwan</span>
-                            </p>
-                            <h6 class="mb-4 mt-0 fw-light"><span class="red-text me-2">$ <span
-                                        class="fw-bold fs-5 ">12</span>/h </span><span class="blue-text">Off 20%</span>
-                            </h6>
-                            <a href="">Read More &gt;</a>
-                    </div>
-                </div>
-
-
-
-
-
-
-
-            </div>
-            <div class="col-12 col-md-6 col-xl-3 p-3">
-                <div class="service-card col-12 col-md-6 col-lg-3 p-0 w-100">
-                    <div class="me-3  w-100">
-                        <img src="../images/electric.png" alt="" width="100%">
-                    </div>
-
-                    <div class="p-4">
-                        <div class="d-flex justify-content-between">
-                            <div class="service-name">
-                                <p>Electronics</p>
-                            </div>
-                            <div>
-                                <span>
-                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M11.1082 4.00751C11.5751 2.66416 13.4749 2.66417 13.9419 4.0075L14.8874 6.72766C15.2307 7.71534 16.1525 8.38502 17.1979 8.40632L20.0771 8.46499C21.499 8.49397 22.0861 10.3008 20.9528 11.16L18.6579 12.8998C17.8247 13.5315 17.4726 14.6151 17.7754 15.6159L18.6093 18.3724C19.0211 19.7336 17.4842 20.8503 16.3168 20.038L13.953 18.3931C13.0947 17.7958 11.9554 17.7958 11.0971 18.3931L8.73328 20.038C7.56592 20.8503 6.02895 19.7336 6.44078 18.3724L7.2747 15.6159C7.57749 14.6151 7.22542 13.5315 6.39218 12.8998L4.09734 11.16C2.96404 10.3008 3.55111 8.49397 4.97299 8.46499L7.8522 8.40632C8.89763 8.38502 9.81936 7.71534 10.1627 6.72766L11.1082 4.00751Z"
-                                            stroke="#FAC153" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </span>
-                                <span class="fw-bold">4.5</span>
-                                <span class="text-darkgrey fw-bold">
-                                    (87)
-                                </span>
-                            </div>
-
-                        </div>
-                        <h6>Lorem Ipsum is simply dummy text</h5>
-                            <p class="mb-2 mt-3">
-                                by <span class="text-black fw-bold">marwan</span>
-                            </p>
-                            <h6 class="mb-4 mt-0 fw-light"><span class="red-text me-2">$ <span
-                                        class="fw-bold fs-5 ">12</span>/h </span><span class="blue-text">Off 20%</span>
-                            </h6>
-                            <a href="">Read More &gt;</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-xl-3 p-3">
-                <div class="service-card col-12 col-md-6 col-lg-3 p-0 w-100">
-                    <div class="me-3  w-100">
-                        <img src="../images/electric.png" alt="" width="100%">
-                    </div>
-
-                    <div class="p-4">
-                        <div class="d-flex justify-content-between">
-                            <div class="service-name">
-                                <p>Electronics</p>
-                            </div>
-                            <div>
-                                <span>
-                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M11.1082 4.00751C11.5751 2.66416 13.4749 2.66417 13.9419 4.0075L14.8874 6.72766C15.2307 7.71534 16.1525 8.38502 17.1979 8.40632L20.0771 8.46499C21.499 8.49397 22.0861 10.3008 20.9528 11.16L18.6579 12.8998C17.8247 13.5315 17.4726 14.6151 17.7754 15.6159L18.6093 18.3724C19.0211 19.7336 17.4842 20.8503 16.3168 20.038L13.953 18.3931C13.0947 17.7958 11.9554 17.7958 11.0971 18.3931L8.73328 20.038C7.56592 20.8503 6.02895 19.7336 6.44078 18.3724L7.2747 15.6159C7.57749 14.6151 7.22542 13.5315 6.39218 12.8998L4.09734 11.16C2.96404 10.3008 3.55111 8.49397 4.97299 8.46499L7.8522 8.40632C8.89763 8.38502 9.81936 7.71534 10.1627 6.72766L11.1082 4.00751Z"
-                                            stroke="#FAC153" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </span>
-                                <span class="fw-bold">4.5</span>
-                                <span class="text-darkgrey fw-bold">
-                                    (87)
-                                </span>
-                            </div>
-
-                        </div>
-                        <h6>Lorem Ipsum is simply dummy text</h5>
-                            <p class="mb-2 mt-3">
-                                by <span class="text-black fw-bold">marwan</span>
-                            </p>
-                            <h6 class="mb-4 mt-0 fw-light"><span class="red-text me-2">$ <span
-                                        class="fw-bold fs-5 ">12</span>/h </span><span class="blue-text">Off 20%</span>
-                            </h6>
-                            <a href="">Read More &gt;</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-xl-3 p-3">
-                <div class="service-card col-12 col-md-6 col-lg-3 p-0 w-100">
-                    <div class="me-3  w-100">
-                        <img src="../images/electric.png" alt="" width="100%">
-                    </div>
-
-                    <div class="p-4">
-                        <div class="d-flex justify-content-between">
-                            <div class="service-name">
-                                <p>Electronics</p>
-                            </div>
-                            <div>
-                                <span>
-                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M11.1082 4.00751C11.5751 2.66416 13.4749 2.66417 13.9419 4.0075L14.8874 6.72766C15.2307 7.71534 16.1525 8.38502 17.1979 8.40632L20.0771 8.46499C21.499 8.49397 22.0861 10.3008 20.9528 11.16L18.6579 12.8998C17.8247 13.5315 17.4726 14.6151 17.7754 15.6159L18.6093 18.3724C19.0211 19.7336 17.4842 20.8503 16.3168 20.038L13.953 18.3931C13.0947 17.7958 11.9554 17.7958 11.0971 18.3931L8.73328 20.038C7.56592 20.8503 6.02895 19.7336 6.44078 18.3724L7.2747 15.6159C7.57749 14.6151 7.22542 13.5315 6.39218 12.8998L4.09734 11.16C2.96404 10.3008 3.55111 8.49397 4.97299 8.46499L7.8522 8.40632C8.89763 8.38502 9.81936 7.71534 10.1627 6.72766L11.1082 4.00751Z"
-                                            stroke="#FAC153" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </span>
-                                <span class="fw-bold">4.5</span>
-                                <span class="text-darkgrey fw-bold">
-                                    (87)
-                                </span>
-                            </div>
-
-                        </div>
-                        <h6>Lorem Ipsum is simply dummy text</h5>
-                            <p class="mb-2 mt-3">
-                                by <span class="text-black fw-bold">marwan</span>
-                            </p>
-                            <h6 class="mb-4 mt-0 fw-light"><span class="red-text me-2">$ <span
-                                        class="fw-bold fs-5 ">12</span>/h </span><span class="blue-text">Off 20%</span>
-                            </h6>
-                            <a href="">Read More &gt;</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <footer class="w-100">
         <div class="w-100 row m-0 justify-content-around px-3 ">

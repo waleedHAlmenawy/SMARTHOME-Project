@@ -1,6 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
 /* ---------------- navbar ----------------- */
@@ -185,66 +185,269 @@ nav a {
 /* ---------------- banner ----------------- */
 
 .banner {
-  background: url(../images/banner-image.png) no-repeat fixed center;
+  background: url(../images/banner-overlay.png) no-repeat fixed center;
   background-size: cover;
 
   min-height: 75vh;
   padding-top: 160px;
 }
 
-.banner-overlay {
-  background: url(../images/banner-overlay.png) no-repeat fixed center;
+.banner-image {
+  background: url(../images/banner-image.png) no-repeat fixed center;
   background-size: cover;
+  position: absolute;
 
   width: 100%;
-  height: 100%;
-  padding-top: 200px;
+  min-height: 75vh;
+  padding-top: 160px;
 
-  text-indent: 100px;
-
-  position: absolute;
   top: 0;
-  z-index: 0;
+  z-index: -1;
 }
 
-.banner .headline {
+.banner .page-headline {
   width: 100%;
-  height: 100%;
+  min-height: 40vh;
 
   font-size: 64px;
-  font-weight: 800;
-  color: white;
+  font-weight: 600;
 
-  text-indent: 0;
+  padding-inline: 50px;
+  color: white;
+}
+
+.banner .page-name {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+}
+
+.banner .page-name div {
+  width: 10px;
+  height: 10px;
+
+  background-color: white;
+  border-radius: 50%;
+
+  margin-right: 9px;
+  margin-left: 151px;
 }
 
 /* ---------------- end of banner ----------------- */
 
+/* ---------------- form ----------------- */
+
+#form {
+  position: relative;
+
+  top: -20rem;
+}
+
+#form > form {
+  min-height: 800px;
+  width: 100%;
+
+  background-color: white;
+  border-radius: 49px;
+  box-shadow: 7px 17px 41px 12px rgba(28, 25, 45, 0.09);
+
+  padding-bottom: 40px;
+}
+
+#form > form #nav {
+  color: rgba(196, 196, 196, 1);
+  border-bottom: 1px solid;
+
+  margin-bottom: 48px;
+}
+
+#form > form .nav-link {
+  color: rgba(103, 89, 255, 1);
+
+  cursor: pointer;
+
+  width: 137px;
+
+  padding-top: 11px;
+  padding-bottom: 11px;
+
+  font-size: 21px;
+  font-weight: 700;
+
+  margin-right: 47px;
+  margin-top: 21px;
+}
+
+#form > form .nav-link.active {
+  border-bottom: 6px solid;
+}
+
+#form aside .user-image {
+  position: relative;
+
+  width: 160px;
+}
+
+#form aside .user-image > img {
+  width: 100%;
+  height: 160px;
+
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#form aside .user-image > div {
+  position: absolute;
+  cursor: pointer;
+
+  right: 15%;
+  bottom: -5%;
+
+  width: 36px;
+  height: 36px;
+
+  background: rgba(255, 255, 255, 1);
+  border-radius: 50%;
+}
+
+#form aside .user-image > div > label {
+  cursor: pointer;
+}
+
+#form aside .user-name {
+  font-size: 24px;
+  font-weight: 700;
+
+  margin: 16px 0;
+}
+
+#form > form .inputs {
+  margin-top: 48px;
+}
+
+#form > form div input,
+#form > form div select,
+#form > form div p {
+  color: black;
+
+  padding: 16px 35px;
+  margin-bottom: 24px;
+
+  border-radius: 30px;
+  border: 2px solid rgba(104, 104, 104);
+}
+
+#form > form div p {
+  color: rgba(103, 89, 255, 1);
+  font-size: 24px;
+
+  padding: 0;
+  margin: 11px 0 33px 0;
+
+  border: 2px solid transparent;
+}
+
+#form > form div input:focus {
+  outline: none;
+}
+
+#form > form > div:last-child > div:last-child {
+  margin: 0;
+}
+
+#form > form > div:last-child div input,
+#form > form > div:last-child div select {
+  padding: 11px 35px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+#form > form #form-btn {
+  outline: none;
+  border: none;
+
+  text-align: center;
+  background: rgba(103, 89, 255, 1);
+  border-radius: 30px;
+
+  font-size: 18px;
+  color: white;
+
+  align-self: flex-end;
+
+  height: 50%;
+
+  padding: 16px 0;
+}
+
+/* ---------------- end of form ----------------- */
+
+/* ---------------- search ----------------- */
+
+#search {
+  height: 150vh;
+  margin: 0;
+
+  padding-top: 150px;
+}
+
+.gradient-background {
+  background: linear-gradient(
+    180deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.901042) 0.07%,
+    rgba(0, 0, 0, 0.305071) 674.04%,
+    rgba(0, 0, 0, 0) 715%
+  );
+}
+
+#search .search-bar {
+  margin: 60px 0;
+
+  padding: 16px 32px;
+  border-radius: 50px;
+
+  font-size: 24px;
+  font-weight: 600;
+
+  box-shadow: 0px 5px 20px 6px rgba(0, 0, 0, 0.07);
+}
+
+#search .search-bar input {
+  background-color: transparent;
+  width: 100%;
+  border: none;
+}
+
+#search .search-bar input:focus {
+  outline: none;
+}
+
+/* ---------------- end of search ----------------- */
+
 /* ---------------- categories ----------------- */
-section{
+section {
   padding-inline: 8rem;
   margin-block: 100px;
   text-transform: capitalize;
-
 }
-section h3{
-
+section h3 {
   font-size: 32px;
   font-weight: 600;
 }
-section h5{
-
+section h5 {
   font-size: 20px;
   font-weight: 600;
 }
-section p{
-
+section p {
   font-size: 16px;
   color: #797979;
 }
 
 section .section-name {
-  background-color: #EAEDFF;
+  background-color: #eaedff;
   max-width: 107px;
   height: 35px;
   border-radius: 40px;
@@ -254,14 +457,13 @@ section .section-name {
   -o-border-radius: 40px;
   text-align: center;
   margin-bottom: 12px;
-  
 }
 .categories-cards {
   margin-top: 48px;
 }
-section .section-name p{
-  color: #6759FF;
-  font-weight:600;
+section .section-name p {
+  color: #6759ff;
+  font-weight: 600;
 
   line-height: 35px;
 }
@@ -271,8 +473,8 @@ section .section-name p{
 
 /* ---------------- services ----------------- */
 
-.service-card{
-  border: #6759FF 1px solid;
+.service-card {
+  border: #6759ff 1px solid;
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -280,7 +482,7 @@ section .section-name p{
   -o-border-radius: 30px;
 }
 
-.service-card img{
+.service-card img {
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -288,16 +490,16 @@ section .section-name p{
   -o-border-radius: 30px;
 }
 
-.service-card a{
+.service-card a {
   text-decoration: none;
-  color: #6759FF;
+  color: #6759ff;
   font-weight: bold;
   font-size: 18px;
 }
 
-.service-name{
-  background-color: #F6F6F6;
-  border: #6759FF 1px solid;
+.service-name {
+  background-color: #f6f6f6;
+  border: #6759ff 1px solid;
   height: 35px;
   padding-inline: 10px;
   border-radius: 40px;
@@ -307,44 +509,40 @@ section .section-name p{
   -o-border-radius: 40px;
   text-align: center;
   margin-bottom: 12px;
-
 }
-section .service-name p{
-  color: #6759FF;
-  font-weight:600;
+section .service-name p {
+  color: #6759ff;
+  font-weight: 600;
   line-height: 35px;
-  
 }
-.service-card span{
+.service-card span {
   font-size: 14px;
-
 }
-.text-darkgrey{
-  color: #6F767E;
+.text-darkgrey {
+  color: #6f767e;
 }
 
 .service-card h6 {
   font-size: 18px;
   font-weight: 600;
 }
-.red-text{
-  color: #EB5757;
+.red-text {
+  color: #eb5757;
   font-size: 12px;
 }
-.blue-text{
-  color: #2682F0;
+.blue-text {
+  color: #2682f0;
   font-weight: 500;
   font-size: 12px;
-
 }
 
 /* ---------------- testmonials ----------------- */
 
-#testmonials h2{
-  color: #6759FF;
+#testmonials h2 {
+  color: #6759ff;
 }
 
-#testmonials .heading{
+#testmonials .heading {
   border-bottom: 1px solid black;
   margin-inline: auto;
   text-align: center;
@@ -352,7 +550,7 @@ section .service-name p{
   max-width: 1237px;
 }
 
-.testmonials-content{
+.testmonials-content {
   background-color: white;
   max-width: 787px;
   min-height: 599px;
@@ -362,25 +560,24 @@ section .service-name p{
   padding-top: 97px;
   position: relative;
   box-shadow: 0 0 30px #aaaaaa3c;
-
 }
-.testmonials-content h3{
+.testmonials-content h3 {
   font-size: 24px;
   margin-block: 13px 8px;
 }
-.testmonials-content p{
+.testmonials-content p {
   font-size: 18px;
   font-weight: 400;
   color: black;
   line-height: 39px;
-  max-width:530px ;
+  max-width: 530px;
   margin-inline: auto;
   text-align: left;
   margin-top: 48px;
   text-transform: capitalize;
 }
 
-.testmonials-content svg{
+.testmonials-content svg {
   margin-inline: 3px;
 }
 
@@ -394,29 +591,28 @@ section .service-name p{
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   margin-inline: auto;
-  
 }
-.testmonials-content .testmonials-img  img{
+.testmonials-content .testmonials-img img {
   position: relative;
   bottom: 20px;
-  
+
   width: 110px;
 }
-.testmonials-content .dots{
+.testmonials-content .dots {
   position: absolute;
   bottom: 5px;
   left: 50%;
   translate: -50%;
-
 }
 
-.testmonials-content .qoutes{
+.testmonials-content .qoutes {
   position: absolute;
-  top:97px;
-  left:145px;
+  top: 97px;
+  left: 145px;
 }
 
-.testmonials-content .right, .testmonials-content .left{
+.testmonials-content .right,
+.testmonials-content .left {
   background-color: white;
   width: 102px;
   height: 102px;
@@ -431,18 +627,17 @@ section .service-name p{
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-    box-shadow: 0 0 30px #aaaaaa3c;
-
+  box-shadow: 0 0 30px #aaaaaa3c;
 }
-.testmonials-content .right{
-  top :50%;
+.testmonials-content .right {
+  top: 50%;
   right: -105px;
-  translate: -50% ;
+  translate: -50%;
 }
-.testmonials-content .left{
-  top :50%;
+.testmonials-content .left {
+  top: 50%;
   left: -5px;
-  translate: -50% ;
+  translate: -50%;
 }
 
 /* ---------------- footer ----------------- */
