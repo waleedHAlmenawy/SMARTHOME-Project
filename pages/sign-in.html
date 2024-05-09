@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/sign-up.css" />
+    <link rel="stylesheet" href="../css/sign-in.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="sign-container">
+        <div class="sign-text">
+          <h1 class="sign-in">LOGIN</h1>
+        </div>
+        <form id="form2" action="index.html">
+          <i class="fa-solid fa-envelope"></i>
+          <input
+            id="email2"
+            type="email"
+            name="email"
+            placeholder="Email"
+            id="email"
+            pattern="[a-z]{2,14}@gmail.com"
+            required
+          />
+          <i class="fa-solid fa-lock"></i
+          ><i
+            class="fa-solid fa-eye"
+            id="eye"
+            onclick='if (document.querySelector(".password").type === "password") { document.querySelector(".password").type = "text"; } else { document.querySelector(".password").type = "password"; }'
+          ></i>
+          <input
+            id="password2"
+            name="password"
+            placeholder="Password"
+            type="password"
+            class="password"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            required
+          />
+          <div class="for">
+            <p><a href="forget.html">Forgot Password?</a></p>
+          </div>
+
+          <input id="sign_in" type="submit" value="Sign In" />
+          <div
+            style="
+              display: flex;
+              width: 100%;
+              margin-top: 20px;
+              position: relative;
+              left: 27%;
+            "
+          >
+            <hr style="width: 15%" />
+            <h4
+              style="
+                position: relative;
+                bottom: 6px;
+                color: white;
+                margin-left: 10px;
+                margin-right: 10px;
+              "
+            >
+              OR
+            </h4>
+            <hr style="width: 15%" />
+          </div>
+          <div
+            style="
+              display: flex;
+              width: 100%;
+              position: relative;
+              left: 27%;
+              justify-content: space-between;
+            "
+          >
+            <h5 style="color: white">Login With</h5>
+            <a href="#"
+              ><i
+                class="fa-brands fa-google-plus"
+                style="width: 50px; margin-left: 70px; color: orange"
+              ></i
+            ></a>
+            <a href="#">
+              <i class="fa-brands fa-facebook" style="margin-left: 60px"></i
+            ></a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="../js/signIn.js"></script>
+    <script src="../js/all.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/sign-in.css">
+    <link rel="stylesheet" href="../css/sign-up.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+            
+            <div class="txt">
+                <h1 class="sign-in">Creat New Acount</h1>
+                <P>Already A Member? <a href="sign-in.html">Login</a></P>
+                
+            </div>
+            <form id="form" action="sign-in.html" >
+                <div class="txte">
+                <i class="fa-solid fa-user" id="me"></i>
+                <input id="name" type="text" placeholder="Frist Name" pattern="[a-zA-Z]{5,15}" required>
+                <i class="fa-solid fa-user" id="me2"></i>                
+                <input id="name2" type="text" placeholder="Last Name" pattern="[a-zA-Z]{5,15}" required>
+                </div>
+                <i class="fa-solid fa-envelope" id="em"></i>
+                <input id="email" class="email" type="email" placeholder="Email"
+                    pattern="[a-z]{2,14}@gmail.com" required>
+                <i class="fa-solid fa-lock" id="lo"></i>
+                <input id="password" class="password" type="password" placeholder="Password"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" oninput="validatePassword()" required>
+                    <i class="fa-solid fa-eye" id="eye" onclick='if (document.querySelector(".password").type === "password") { document.querySelector(".password").type = "text"; } else { document.querySelector(".password").type = "password"; }'></i>
+                
+            
+                <button id="sign_up" class="newsub" type="submit">Creat Acount</button>
+                <div style="display: flex;  width: 100%; margin-top: 20px; position: relative; left: 30%;">
+                    <hr style="width: 15%;"> <h4 style="position: relative; bottom: 6px; color: white; margin-left: 10px; margin-right: 10px;">OR</h4> <hr style="width: 15%;">
+                </div>
+                <div style="display: flex;  width: 100%;  position: relative; left: 30%; justify-content: space-between;">
+                   <h5 style="color: white;">Login With</h5> 
+                   <a href="#"><i class="fa-brands fa-google-plus" style="width: 50px; margin-left: 70px; color: rgb(41, 41, 212);"></i></a>
+                  <a href="#"> <i class="fa-brands fa-facebook" style="margin-left: 60px; " ></i></a>
+                </div>
+            </form>
+
+        </div>
+        
+       
+        </script>
+        <script src="../js/signUP.js"></script>
+        <script src="../js/all.min.js"></script>
+
+</body>
+
+</html>

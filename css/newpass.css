@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+}
+h1 {
+  position: relative;
+  top: -40px;
+  left: 32%;
+  color: white;
+}
+h3 {
+  position: relative;
+  left: 20%;
+  color: white;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/banner-home.png");
+  /* linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0)); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+/* .container::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(103, 89, 255, 0.25);
+} */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.newpass-container {
+  z-index: 9999;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+}
+
+.container .newpass-container form {
+  display: grid;
+  width: 60%;
+  margin: 30px auto;
+  gap: 20px;
+  position: relative;
+}
+
+.container .newpass-container form input {
+  padding: 10px;
+  padding-left: 40px;
+  border: white 1px solid;
+  border-radius: 19px;
+  outline: none;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.082);
+  color: white;
+}
+input::placeholder {
+  color: white;
+}
+
+.container .newpass-container form svg {
+  position: absolute;
+  color: white;
+  z-index: 3;
+}
+
+.container .newpass-container form svg.fa-lock {
+  top: 10px;
+  left: 16px;
+}
+
+#lo {
+  top: 71px;
+  left: 16px;
+}
+
+#eye {
+  top: 13px;
+  left: 91%;
+  cursor: pointer;
+}
+#eye2 {
+  top: 73px;
+  left: 91%;
+  cursor: pointer;
+}
+
+.container .newpass-container form div {
+  text-transform: capitalize;
+  margin-left: 15px;
+  margin-top: -10px;
+  cursor: pointer;
+}
+
+.container .newpass-container form input[type="submit"] {
+  color: white;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.082);
+  padding: 10px 35px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.container .newpass-container form input[type="submit"]:hover {
+  background-color: #080429;
+  border: white 1px solid;
+}
+.newsub {
+  padding: 10px;
+  padding-left: 40px;
+  border: white 1px solid;
+  border-radius: 19px;
+  outline: none;
+  position: relative;
+  font-size: 16px;
+  position: relative;
+  bottom: 20px;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.082);
+  padding: 10px 35px;
+  margin: auto;
+  cursor: pointer;
+  position: relative;
+  top: 20px;
+  width: 40%;
+}
+.newsub:hover {
+  background-color: #6759ff;
+  border: white 1px solid;
+}
